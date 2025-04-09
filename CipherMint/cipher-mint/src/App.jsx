@@ -10,6 +10,7 @@ export default function App() {
   const [copied, setCopied] = useState(false);
   const [theme, setTheme] = useState("light");
 
+
   useEffect(() => {
     document.body.className = theme === "dark" ? "dark" : "";
   }, [theme]);
@@ -78,7 +79,8 @@ export default function App() {
         />
       ))}
 
-      <div className="relative z-10 w-full max-w-xl p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
+      <motion.div drag dragConstraints={{top:-200, right:450, left:-450, bottom:200}} whileDrag={{scale:1.2}} dragElastic={0.2}  
+       className="relative z-10 w-full max-w-xl p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold uppercase tracking-wide">Password Generator</h1>
           <motion.button
@@ -182,7 +184,7 @@ export default function App() {
             }`}
           ></div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
