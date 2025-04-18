@@ -1,8 +1,12 @@
 import React from 'react'
+import UserContextProvider from './context/UserContextProvider'
+import Login from './components/Login'
 
 const App = () => {
   return (
-    <div>App</div>
+    <UserContextProvider>
+      <Login />
+    </UserContextProvider>
   )
 }
 
