@@ -1,15 +1,13 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 import UserContextProvider from './context/UserContextProvider'
-import Login from './components/Login'
-import Profile from './components/Profile'
 
-const App = () => {
+const Layout = () => {
   return (
     <UserContextProvider>
-      {/* <Login />
-      <Profile /> */}
+        <Outlet />
     </UserContextProvider>
   )
 }
 
-export default App
+export default Layout
