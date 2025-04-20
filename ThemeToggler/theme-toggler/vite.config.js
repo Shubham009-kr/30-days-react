@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-  darkMode: "class",
+  darkMode: ['class', '[class*="dark"]']
 })
