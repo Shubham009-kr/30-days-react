@@ -5,6 +5,7 @@ const data = [
         role:"Controller",
         abilities:"Incendiary | Sky Smoke | Stim Beacon | Orbital Strike",
         description: "Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.",
+        image:"CharacterShowcase//valoCharacters//src//assets//images//Brimm_Light.jpg",
     },
     {
         id: "2",

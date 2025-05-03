@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import data from './data'
 
+
 const Accordion = () => {
   const [selected, setSelected] = useState(null)
   
@@ -11,10 +12,13 @@ const Accordion = () => {
 
   return (<>
     <div className='w-full h-screen '>
-        <div className='flex flex-wrap items-center items-center justify-center gap-10 px-20 py-15 '>
+        <div className='flex flex-wrap items-center items-center justify-center gap-10 px-20 py-15'>
             {
                 data && data.length > 0 ? 
-                data.map(dataItem => <div className='w-84 h-112 border-2 flex flex-col items-center rounded-[5px]'>
+                data.map(dataItem => <div 
+                    // style={{backgroundImage: `url(${dataItem.image})`}}
+                    className={`w-84 h-112 border-2 flex flex-col items-center rounded-[5px] bg-[url('${dataItem.image}')] bg-cover bg-center`}
+                >
                     <div  onClick={() => handleSingleSelection(dataItem.id)}
                     className='flex items-center gap-8 cursor-grab h-12 w-full px-4 justify-between font-[valorant] text-[2vw] uppercase z-10'>
                         <h3 className=''>{dataItem.name}</h3>
