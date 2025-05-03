@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "valorant";
+    src: url(../src/assets/fonts/Valorant\ Font.ttf);
+}
+
+@font-face {
+    font-family: "title";
+    src: url(../src/assets/fonts/Title.woff2);
+}
