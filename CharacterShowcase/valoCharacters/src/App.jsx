@@ -9,6 +9,8 @@ function App() {
   return (
     < >
     <h1 className='font-[valorant] text-[#FF4655] text-[15vw] absolute z-[-1] fixed bottom-[0px] left-10 '>VALORANT</h1>
+    {/* <h1 className='font-[valorant] text-[#868686] text-[15vw] absolute z-[-1] fixed bottom-50 left-10 '>VALORANT</h1> */}
+
       <Accordion />
     </>
   )

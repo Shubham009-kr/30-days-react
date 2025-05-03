@@ -17,7 +17,8 @@ const Accordion = () => {
                 data && data.length > 0 ? 
                 data.map(dataItem => <div 
                     // style={{backgroundImage: `url(${dataItem.image})`}}
-                    className={`w-84 h-112 border-2 flex flex-col items-center rounded-[5px] bg-[url('${dataItem.image}')] bg-cover bg-center`}
+                    className={`w-84 h-112 border-2 flex flex-col items-center rounded-[5px] bg-[url('${dataItem.image}')] bg-cover bg-center bg-clip-padding shadow-xl backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
+`}
                 >
                     <div  onClick={() => handleSingleSelection(dataItem.id)}
                     className='flex items-center gap-8 cursor-grab h-12 w-full px-4 justify-between font-[valorant] text-[2vw] uppercase z-10'>
