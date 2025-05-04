@@ -21,7 +21,7 @@ const data = [
         role:"Duelist",
         abilities:"Slow Orb | Healing Orb | Barrier Orb | Resurrection",
         description: "The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.",
-        image:"../src/assets/public/images/VALORANT_Sage_Light.jpg",
+        image:"../src/assets/public/images/Sage.png",
     },
     {
         id: "4",
@@ -53,6 +53,7 @@ const data = [
         role:"Duelist",
         abilities:"Devour | Dismiss | Leer | Empress",
         description: "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.",
+        image:"../src/assets/public/images/Reyna.jpg",
     },
     {
         id: "8",
@@ -60,6 +61,7 @@ const data = [
         role:"Sentinel",
         abilities:"Alarmbot | Turret | Nanoswarm | Lockdown",
         description: "The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of inventions. If the damage from her gear doesn't stop her enemies, her robots' debuff will help make short work of them.",
+        image:"../src/assets/public/images/Kj.jpg",
     },
     {
         id: "9",
@@ -67,6 +69,7 @@ const data = [
         role:"Initiator",
         abilities:"Flashpoint | Fault Line | Aftershock | Rolling Thunder",
         description: "Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.",
+        image:"../src/assets/public/images/Breach.jpg",
     },
     {
         id: "10",
@@ -74,6 +77,7 @@ const data = [
         role:"Controller",
         abilities:"Paranoia | Dark Cover | Shrouded Step | From The Shadows",
         description: "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.",
+        image:"../src/assets/public/images/Omen.jpg",
     },
     {
         id: "11",
@@ -81,6 +85,7 @@ const data = [
         role:"Duelist",
         abilities:"Updraft | Tailwind | Cloudburst | Blade Storm",
         description: "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.",
+        image:"../src/assets/public/images/Jett.jpg",
     },
     {
         id: "12",
@@ -88,6 +93,7 @@ const data = [
         role:"Duelist",
         abilities:"Blast Pack | Paint Shells | Boom Bot | Showstopper",
         description: "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of 'boom.'",
+        image:"../src/assets/public/images/Raze.jpg",
     },
     {
         id: "13",
@@ -95,6 +101,7 @@ const data = [
         role:"Initiator",
         abilities:"Trailblazer | Guiding Light | Regrowth | Seekers",
         description: "Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye’s side.",
+        image:"../src/assets/public/images/Skye.jpg",
     },
     {
         id: "14",
@@ -102,6 +109,7 @@ const data = [
         role:"Duelist",
         abilities:"Blindside | Gatecrash | Fakeout | Dimensional Drift",
         description: "Japanese native, Yoru, rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.",
+        image:"../src/assets/public/images/Yoru.png",
     },
     {
         id: "15",
@@ -109,6 +117,7 @@ const data = [
         role:"Controller",
         abilities:"Nova Pulse | Nebulla | Gravity Well | Astral Form/Cosmic Divide",
         description: "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.",
+        image:"../src/assets/public/images/Astra.webp",
     },
     {
         id: "16",
@@ -116,6 +125,7 @@ const data = [
         role:"Initiator",
         abilities:"Flash/Drive | Zero/Point | Frag/Ment | Null/Cmd",
         description: "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy abilities dismantles his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
+        image:"../src/assets/public/images/K.png",
     },
     {
         id: "17",
@@ -123,6 +133,7 @@ const data = [
         role:"Sentinel",
         abilities:"Headhunter | Rendezvous | Trademark | Tour De Force",
         description: "Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
+        image:"../src/assets/public/images/Chamber.webp",
     },
     {
         id: "18",
@@ -130,6 +141,7 @@ const data = [
         role:"Duelist",
         abilities:"Relay Bolt | High Gear | Fast Lane | Overdrive",
         description: "Filipino Agent Neon surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard, then strikes them down quicker than lightning.",
+        image:"../src/assets/public/images/Neon.png",
     },
     {
         id: "19",
@@ -137,6 +149,7 @@ const data = [
         role:"Initiator",
         abilities:"Seize | Haunt | Prowler | Nightfall",
         description: "Turkish bounty hunter, Fade, unleashes the power of raw nightmares to seize enemy secrets. Attuned with terror itself, she hunts targets and reveals their deepest fears—before crushing them in the dark.",
+        image:"../src/assets/public/images/Fade.png",
     },
     {
         id: "20",
@@ -144,6 +157,7 @@ const data = [
         role:"Controller",
         abilities:"Cove | High Tide | Cascade | Reckoning",
         description: "Hailing from India’s coast, Harbor storms the field wielding ancient technology with dominion over water. He unleashes frothing rapids and crushing waves to shield his allies, or pummel those that oppose him.",
+        image:"../src/assets/public/images/Harbor.png",
     },
     {
         id: "21",
@@ -151,6 +165,7 @@ const data = [
         role:"Initiator",
         abilities:"Wingman | Dizzy | Mosh Pit | Thrash",
         description: "Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.",
+        image:"../src/assets/public/images/Gekko.jpg",
     },
     {
         id: "22",
@@ -158,6 +173,7 @@ const data = [
         role:"Sentinel",
         abilities:"Sonic Sensor | Barrier Mesh | Gravenet | Annihilation",
         description: "Norwegian operative Deadlock deploys an array of cutting-edge nanowire to secure the battlefield from even the most lethal assault. No one escapes her vigilant watch, nor survives her unyielding ferocity.",
+        image:"../src/assets/public/images/Deadlock.png",
     },
     {
         id: "23",
@@ -165,6 +181,7 @@ const data = [
         role:"Duelist",
         abilities:"Undercut | Doubletap | Contigency | Kill Contract",
         description: "Chinese fixer for hire, Iso falls into a flow state to dismantle the opposition. Reconfiguring ambient energy into bulletproof protection, he advances with focus towards his next duel to the death.",
+        image:"../src/assets/public/images/Iso.jpg",
     },
     {
         id: "24",
@@ -172,6 +189,7 @@ const data = [
         role:"Controller",
         abilities:"Meddle | Ruse | Pick-Me-UP | Not Dead Yet",
         description: "Scottish troublemaker Clove makes mischief for enemies in both the heat of combat and the cold of death. The young immortal keeps foes guessing, even from beyond the grave, their return to the living only ever a moment away.",
+        image:"../src/assets/public/images/Clove.png",
     },
     {
         id: "25",
@@ -179,6 +197,7 @@ const data = [
         role:"Sentinel",
         abilities:"Shear | Arc Rose | Razorvine | Steel Garden",
         description: "Metallic mastermind Vyse unleashes liquid metal to isolate, trap, and disarm her enemies. Through cunning and manipulation, she forces all who oppose her to fear the battlefield itself.",
+        image:"../src/assets/public/images/Vysee.png",
     },
     {
         id: "26",
@@ -186,6 +205,7 @@ const data = [
         role:"Initiator",
         abilities:"Stealth Drone | Special Delivery | Guided Salvo | Armageddon",
         description: "A veteran intelligence consultant from Colombia, Tejo's ballistic guidance system pressures the enemy to relinquish their ground - or their lives. His targeted strikes keep opponents off balance and under his heel.",
+        image:"../src/assets/public/images/Tejo.jpg",
     },
     {
         id: "27",
@@ -193,6 +213,7 @@ const data = [
         role:"Duelist",
         abilities:"Saturate | LightSpeed | Refract | Convergent Paths",
         description: "Thailand's prismatic radiant Waylay transforms into light itself as she darts across the battlefield, striking down her targets through shards of light before flitting back to safety, all in the blink of an eye.",
+        image:"../src/assets/public/images/Waylay.jpg",
     },
     
 ]
