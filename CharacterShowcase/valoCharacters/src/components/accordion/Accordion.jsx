@@ -16,13 +16,13 @@ const Accordion = () => {
             {
                 data && data.length > 0 ? 
                 data.map(dataItem => <div 
-                    style={{ backgroundImage: `url(${dataItem.image})` }}
-                    className={`w-84 h-112 z-5 border-2 flex flex-col items-center rounded-[5px] bg-[url(${dataItem.image})] bg-cover bg-top bg-clip-padding shadow-xl backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
+                    style={{ backgroundImage: `url(${dataItem.image})`, borderRadius: '25px' }}
+                    className={`w-84 h-112 z-5 border-2 flex flex-col items-center rounded-[12px] bg-[url(${dataItem.image})] bg-cover bg-top bg-clip-padding shadow-xl backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
                 `}
                 >
                     {/* <img src={dataItem.image} alt="" className='w-20 h-20' /> */}
                     <div  onClick={() => handleSingleSelection(dataItem.id)}
-                    className='flex items-center gap-8 cursor-grab h-12 w-full px-4 justify-between font-[valorant] text-[2vw] uppercase z-10 bg-gray-300/30 backdrop-filter backdrop-blur-sm'>
+                    className='flex items-center gap-8 cursor-grab h-12 w-full px-4 rounded-t-[12px] justify-between font-[valorant] text-[2vw] uppercase z-10 bg-gray-300/30 backdrop-filter backdrop-blur-sm'>
                         <h3 className=''>{dataItem.name}</h3>
                         <span>+</span>
                     </div>
@@ -33,7 +33,7 @@ const Accordion = () => {
                     </div> : null }
                     { selected === dataItem.id ? <div className='absolute w-[100%] fixed h-[100%] bg-amber-200/20 -z-10'>
                     </div> : null }
-                    { selected === dataItem.id ? <div className='absolute w-[160%] fixed h-[100%]  -z-10'>
+                    { selected === dataItem.id ? <div className='absolute w-[160%] fixed h-[100%] rounded-[12px]  -z-10'>
                         <div className='px-3'>
                             {/* <h4 className='absolute top-[10%] font-[title] uppercase text-[40px] [writing-mode:vertical-lr] [text-orientation:upright] '>{dataItem.name}</h4> */}
                             <h4 className='absolute bottom-[20%] font-[title] uppercase text-2xl text-white text-stroke-3 '>{dataItem.name}</h4>
