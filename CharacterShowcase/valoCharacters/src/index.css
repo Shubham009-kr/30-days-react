@@ -9,3 +9,7 @@
     font-family: "title";
     src: url(../src/assets/fonts/Title.woff2);
 }
+
+.text-stroke-3 {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}

@@ -12,12 +12,12 @@ const Accordion = () => {
 
   return (<>
     <div className='w-full h-screen '>
-        <div className='flex flex-wrap items-center items-center justify-center gap-10 px-20 py-15'>
+        <div className='flex flex-wrap items-center items-center justify-center gap-30 px-20 py-15'>
             {
                 data && data.length > 0 ? 
                 data.map(dataItem => <div 
                     style={{ backgroundImage: `url(${dataItem.image})` }}
-                    className={`w-84 h-112 border-2 flex flex-col items-center rounded-[5px] bg-[url(${dataItem.image})] bg-cover bg-top bg-clip-padding shadow-xl backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
+                    className={`w-84 h-112 z-5 border-2 flex flex-col items-center rounded-[5px] bg-[url(${dataItem.image})] bg-cover bg-top bg-clip-padding shadow-xl backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
                 `}
                 >
                     {/* <img src={dataItem.image} alt="" className='w-20 h-20' /> */}
@@ -31,9 +31,32 @@ const Accordion = () => {
                         <h5 className='text-[14px] italic font-medium'>{dataItem.abilities}</h5>
                         <p className='text-[14px] py-1'>{dataItem.description}</p>
                     </div> : null }
-                </div>)
+                    { selected === dataItem.id ? <div className='absolute w-[100%] fixed h-[100%] bg-amber-200/20 -z-10'>
+                    </div> : null }
+                    { selected === dataItem.id ? <div className='absolute w-[160%] fixed h-[100%]  -z-10'>
+                        <div className='px-3'>
+                            {/* <h4 className='absolute top-[10%] font-[title] uppercase text-[40px] [writing-mode:vertical-lr] [text-orientation:upright] '>{dataItem.name}</h4> */}
+                            <h4 className='absolute bottom-[20%] font-[title] uppercase text-2xl text-white text-stroke-3 '>{dataItem.name}</h4>
+                            <h4 className='absolute bottom-[15%] font-[title] uppercase text-2xl  '>{dataItem.name}</h4>
+                            <h4 className='absolute bottom-[10%] font-[title] uppercase text-2xl  text-red-950'>{dataItem.name}</h4>
+                            <h4 className='absolute bottom-[5%] font-[title] uppercase text-2xl  text-red-800'>{dataItem.name}</h4>
+                            <h4 className='absolute bottom-[0%] font-[title] uppercase text-2xl  text-red-500'>{dataItem.name}</h4>
+
+                            <h4 className='absolute bottom-[20%] right-0 mx-3  font-[title] uppercase text-2xl text-white text-stroke-3 '>{dataItem.name}</h4>
+                            <h4 className='absolute bottom-[15%] right-0 mx-3  font-[title] uppercase text-2xl  '>{dataItem.name}</h4>
+                            <h4 className='absolute bottom-[10%] right-0 mx-3  font-[title] uppercase text-2xl  text-red-950'>{dataItem.name}</h4>
+                            <h4 className='absolute bottom-[5%]  right-0 mx-3 font-[title] uppercase text-2xl  text-red-800'>{dataItem.name}</h4>
+                            <h4 className='absolute bottom-[0%]  right-0 mx-3 font-[title] uppercase text-2xl  text-red-500'>{dataItem.name}</h4>
+                        </div>
+                        
+                        {/* <h4 className='font-[title]'>PHOENIX</h4> */}
+                    </div> : null }
+                </div>
+                
+                )
                 : <div>No data found </div>
             }
+            
         </div>
     </div>
     </>
