@@ -48,8 +48,6 @@ const Accordion = () => {
                             <h4 className='absolute bottom-[5%]  right-0 mx-3 font-[title] uppercase text-2xl  text-red-800'>{dataItem.name}</h4>
                             <h4 className='absolute bottom-[0%]  right-0 mx-3 font-[title] uppercase text-2xl  text-red-500'>{dataItem.name}</h4>
                         </div>
-                        
-                        {/* <h4 className='font-[title]'>PHOENIX</h4> */}
                     </div> : null }
                 </div>
                 
